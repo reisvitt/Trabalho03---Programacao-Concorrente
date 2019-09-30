@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" x="-110.0" y="100.0">
+         <image>
+            <Image url="@../imagens/barco.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="280.0" layoutY="100.0" prefHeight="35.0" prefWidth="84.0">
+         <children>
+            <ImageView fx:id="go1" fitHeight="49.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/GO.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="stop1" fitHeight="49.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../imagens/STOP.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="665.0" layoutY="100.0" prefHeight="35.0" prefWidth="84.0">
+         <children>
+            <ImageView fx:id="go2" fitHeight="49.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/GO.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="stop2" fitHeight="49.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../imagens/STOP.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="3.0" layoutY="6.0" opacity="0.7" style="-fx-background-color: #1df866;" text="Problema do Trem" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold Italic" size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Spinner fx:id="spinnerRight" layoutX="622.0" layoutY="399.0" onMouseClicked="#spinnerRightEvent" prefHeight="28.0" prefWidth="60.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Spinner>
+      <Spinner fx:id="spinnerLeft" layoutX="334.0" layoutY="397.0" onMouseClicked="#spinnerLeftEvent" prefHeight="28.0" prefWidth="60.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Spinner>
+      <AnchorPane fx:id="apresentacao" opacity="0.9" prefHeight="430.0" prefWidth="1000.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button layoutX="416.0" layoutY="196.0" mnemonicParsing="false" onAction="#fecharApresentacao" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15px;" text="Iniciar simulação" textFill="#d0d0d0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
